@@ -29,14 +29,6 @@ export function About() {
             {t.about.title}
           </ScrollReveal>
           <p className="section-text">{t.about.text}</p>
-          <dl className="facts-row">
-            {t.about.facts.map((fact) => (
-              <div key={fact.strong} className="fact">
-                <dt className="fact-strong">{fact.strong}</dt>
-                <dd className="fact-label">{fact.label}</dd>
-              </div>
-            ))}
-          </dl>
         </Reveal>
         <Reveal className="split-media" delay={120}>
           <div className="media-frame">

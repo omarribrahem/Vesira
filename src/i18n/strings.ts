@@ -31,7 +31,6 @@ interface Strings {
     eyebrow: string;
     title: string;
     text: string;
-    facts: Array<{ strong: string; label: string }>;
     photo: PhotoKey;
   };
   services: {
@@ -62,9 +61,9 @@ interface Strings {
 }
 
 const en: Strings = {
-  title: 'VASIRA — Growth Begins With Vision',
+  title: 'VASIRA | Growth Begins With Vision',
   description:
-    'VASIRA is an independent marketing and growth partner for brands in Egypt and Saudi Arabia. Strategy, creative, social and performance under one roof.',
+    'VASIRA is a digital marketing partner for brands in Egypt and Saudi Arabia. Strategy, creative, social and performance under one roof.',
   nav: {
     about: 'About',
     services: 'Services',
@@ -75,57 +74,52 @@ const en: Strings = {
     menu: 'Menu',
   },
   hero: {
-    eyebrow: 'Independent marketing & growth partner',
+    eyebrow: 'Marketing & growth partner',
     line1: 'Strategy.',
     line2: 'Growth.',
     line3: 'Impact.',
     description:
-      'VASIRA turns vision into a premium brand presence through strategy, content, design and performance-driven execution.',
+      'Strategy, creative, social and performance marketing for brands in Egypt and Saudi Arabia.',
     cta1: 'Start a project',
     cta2: 'Explore services',
     artLabel: 'The VASIRA mark as a lighthouse: two dark planes forming a V, a warm light rising from the point where they meet.',
   },
   about: {
-    eyebrow: 'About VASIRA',
-    title: 'A marketing partner built for premium brands and ambitious growth.',
-    text: 'We craft strategy, creative direction and execution that feel elevated, modern and commercially smart — with a focused understanding of Egypt and Saudi Arabia.',
-    facts: [
-      { strong: 'EG', label: 'Egypt, a primary market' },
-      { strong: 'KSA', label: 'Saudi Arabia, a primary market' },
-      { strong: '04', label: 'Service pillars, one team' },
-    ],
+    eyebrow: 'About',
+    title: 'Built for brands growing in Egypt and Saudi Arabia.',
+    text: 'One team handling strategy, creative direction and campaign execution, shaped around how each market buys.',
     photo: 'planning',
   },
   services: {
-    eyebrow: 'What we do',
-    title: 'Four pillars, one focused team.',
+    eyebrow: 'Services',
+    title: 'Four pillars, one team.',
     items: [
       {
         title: 'Brand Strategy',
-        text: 'Positioning, messaging, growth planning and market-led direction.',
+        text: 'Positioning, messaging and market direction.',
         photo: 'brandDesign',
       },
       {
         title: 'Creative & Content',
-        text: 'Visual campaigns, content systems and art direction built to stand out.',
+        text: 'Campaigns, visual identity and art direction.',
         photo: 'production',
       },
       {
         title: 'Social & Media',
-        text: 'Smart channel planning, paid media and always-on communication.',
+        text: 'Channel planning, content publishing and paid reach.',
         photo: 'social',
       },
       {
         title: 'Performance Growth',
-        text: 'Optimization, conversion thinking and measurable progress across the funnel.',
+        text: 'Conversion tracking, testing and campaign optimization.',
         photo: 'performance',
       },
     ],
   },
   media: {
-    eyebrow: 'Paid advertising',
-    title: 'Paid media, planned and bought with intent.',
-    text: 'We plan, buy and optimise paid campaigns across social and search — clear targeting, tested creative, and spend that follows the numbers that matter.',
+    eyebrow: 'Paid media',
+    title: 'Targeted campaigns across social and search.',
+    text: 'Clear audience targeting, tested creative and budget allocation tied to real results.',
     photo: 'paid',
   },
   photos: {
@@ -155,23 +149,23 @@ const en: Strings = {
     },
   },
   markets: {
-    eyebrow: 'Market focus',
-    title: 'Egypt and Saudi Arabia, with messaging shaped for each context.',
+    eyebrow: 'Markets',
+    title: 'Focused on Egypt and Saudi Arabia.',
     items: [
       {
         title: 'Egypt',
-        text: 'Audience-first campaigns, locally relevant storytelling and strong social execution.',
+        text: 'Local audience insight, storytelling and social execution.',
       },
       {
         title: 'Saudi Arabia',
-        text: 'Premium brand positioning, culturally aware creative and focused growth strategy.',
+        text: 'Brand positioning, culturally grounded creative and growth planning.',
       },
     ],
   },
   contact: {
-    eyebrow: 'Let’s talk',
-    title: 'Start the conversation.',
-    text: 'Tell us about your brand and where you want it to go — we reply with next steps.',
+    eyebrow: 'Contact',
+    title: 'Start a project.',
+    text: 'Send us a note about your brand by email or Instagram.',
     emailCta: 'Email VASIRA',
     instagramCta: 'Instagram',
     footerNote: 'Growth begins with vision.',
@@ -179,9 +173,9 @@ const en: Strings = {
 };
 
 const ar: Strings = {
-  title: 'VASIRA — النمو يبدأ بالرؤية',
+  title: 'VASIRA | النمو يبدأ بالرؤية',
   description:
-    'فاسيرا شريك مستقل في التسويق والنمو للعلامات في مصر والسعودية: استراتيجية وإبداع وسوشيال وأداء في مكان واحد.',
+    'فاسيرا شريك تسويق رقمي للعلامات التجارية في مصر والسعودية: الاستراتيجية والإبداع والسوشيال والأداء في مكان واحد.',
   nav: {
     about: 'عن فاسيرا',
     services: 'الخدمات',
@@ -192,103 +186,98 @@ const ar: Strings = {
     menu: 'القائمة',
   },
   hero: {
-    eyebrow: 'شريك مستقل في التسويق والنمو',
+    eyebrow: 'شريك التسويق والنمو',
     line1: 'استراتيجية.',
     line2: 'نمو.',
     line3: 'تأثير.',
     description:
-      'تحوّل فاسيرا الرؤية إلى حضور براندي راقٍ من خلال الاستراتيجية والمحتوى والتصميم والتنفيذ المعتمد على الأداء.',
+      'تسويق متكامل في الاستراتيجية والمحتوى والإعلانات للعلامات التجارية في مصر والسعودية.',
     cta1: 'ابدأ مشروعك',
     cta2: 'استكشف الخدمات',
     artLabel: 'علامة فاسيرا كمنارة: سطحان داكنان يشكلان حرف V ينبع منه ضوء دافئ من نقطة الالتقاء.',
   },
   about: {
     eyebrow: 'عن فاسيرا',
-    title: 'شريك تسويقي مبني للعلامات الراقية والنمو الطموح.',
-    text: 'نصنع الاستراتيجية والتوجيه الإبداعي والتنفيذ بأسلوب حديث واحترافي وذكي تجاريًا، مع فهم دقيق للسوقين المصري والسعودي.',
-    facts: [
-      { strong: 'EG', label: 'مصر، سوق أساسي' },
-      { strong: 'KSA', label: 'السعودية، سوق أساسي' },
-      { strong: '04', label: 'ركائز خدمية، وفريق واحد' },
-    ],
+    title: 'شريك تسويقي للعلامات التجارية في مصر والسعودية.',
+    text: 'فريق واحد يجمع بين الاستراتيجية والتوجيه الإبداعي وتنفيذ الحملات بما يناسب طبيعة كل سوق.',
     photo: 'planning',
   },
   services: {
-    eyebrow: 'ماذا نقدم',
-    title: 'أربع ركائز وفريق واحد يركز على علامتك.',
+    eyebrow: 'الخدمات',
+    title: 'أربع ركائز، فريق واحد.',
     items: [
       {
         title: 'استراتيجية العلامة',
-        text: 'تموضع ورسائل وخطط نمو وتوجيه مبني على فهم السوق.',
+        text: 'التموضع والرسائل وتوجيه النمو في السوق.',
         photo: 'brandDesign',
       },
       {
         title: 'الإبداع والمحتوى',
-        text: 'حملات بصرية وأنظمة محتوى وتوجيه فني يجعل العلامة ملفتة.',
+        text: 'الحملات البصرية، أنظمة المحتوى والتوجيه الفني.',
         photo: 'production',
       },
       {
         title: 'السوشيال والميديا',
-        text: 'تخطيط ذكي للقنوات وتواصل مستمر يبقي العلامة حاضرة.',
+        text: 'تخطيط القنوات، إدارة المحتوى والوصول المدفوع.',
         photo: 'social',
       },
       {
         title: 'نمو الأداء',
-        text: 'تحسين النتائج والتفكير في التحويل وقياس التطور عبر المسار كاملًا.',
+        text: 'تحسين التحويلات، الاختبار المستمر وتطوير النتائج.',
         photo: 'performance',
       },
     ],
   },
   media: {
     eyebrow: 'الإعلانات المدفوعة',
-    title: 'إعلانات مدفوعة بنية واضحة، لا بالتخمين.',
-    text: 'نخطط لحملاتنا المدفوعة على الشبكات الاجتماعية والبحث ونشتريها ونحسّنها: استهداف واضح، وإبداع مُختبَر، وإنفاق يتبع الأرقام المهمة.',
+    title: 'حملات مدفوعة على السوشيال ومحركات البحث.',
+    text: 'استهداف واضح، اختبار مستمر للإعلانات، وتوزيع للميزانية حسب النتائج الفعلية.',
     photo: 'paid',
   },
   photos: {
     planning: {
       stem: '01-campaign-strategy',
-      alt: 'فريق بيخطط لحملة تسويقية حول طاولة.',
+      alt: 'فريق يخطط لحملة تسويقية حول طاولة.',
     },
     production: {
       stem: '02-product-production',
-      alt: 'كاميرا وإضاءة مجهّزين لتصوير منتج.',
+      alt: 'كاميرا وإضاءة مجهزتان لتصوير منتج.',
     },
     social: {
       stem: '03-social-content',
-      alt: 'موبايل بيصوّر عرضًا لمنتج على طاولة.',
+      alt: 'هاتف يصور عرضًا لمنتج على طاولة.',
     },
     brandDesign: {
       stem: '04-brand-design',
-      alt: 'مصمم بيراجع درجات ألوان وأفكار بصرية.',
+      alt: 'مصمم يراجع درجات ألوان وأفكارًا بصرية.',
     },
     paid: {
       stem: '05-paid-campaigns',
-      alt: 'متخصص تسويق بيراجع تصميمات إعلانية على لابتوب.',
+      alt: 'مختص تسويق يراجع تصميمات إعلانية على حاسوب محمول.',
     },
     performance: {
       stem: '06-performance-review',
-      alt: 'شخصان بيراجعوا مواد حملة تسويقية معًا.',
+      alt: 'عضوان من الفريق يراجعان مواد حملة تسويقية معًا.',
     },
   },
   markets: {
-    eyebrow: 'تركيز الأسواق',
-    title: 'مصر والسعودية، برسائل مصممة حسب طبيعة كل سوق.',
+    eyebrow: 'الأسواق',
+    title: 'نركز على مصر والسعودية.',
     items: [
       {
         title: 'مصر',
-        text: 'حملات قريبة من الجمهور المحلي، وقصص مناسبة للسوق، وتنفيذ قوي على السوشيال.',
+        text: 'حملات قريبة من الجمهور المحلي وتنفيذ قوي على السوشيال.',
       },
       {
         title: 'السعودية',
-        text: 'تموضع براندي راقٍ، وإبداع واعٍ ثقافيًا، واستراتيجية نمو مركزة.',
+        text: 'تموضع واضح للعلامة وإبداع مناسب للثقافة المحلية وخطة نمو مركزة.',
       },
     ],
   },
   contact: {
-    eyebrow: 'لنتواصل',
-    title: 'ابدأ الحوار.',
-    text: 'حدّثنا عن علامتك وإلى أين تريدها أن تصل — وسنرد عليك بالخطوات التالية.',
+    eyebrow: 'تواصل',
+    title: 'ابدأ مشروعك.',
+    text: 'أرسل لنا تفاصيل علامتك عبر البريد الإلكتروني أو إنستغرام.',
     emailCta: 'راسل فاسيرا',
     instagramCta: 'إنستغرام',
     footerNote: 'النمو يبدأ بالرؤية.',

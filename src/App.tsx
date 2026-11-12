@@ -33,7 +33,6 @@ export default function App() {
         </GlowCursor>
         <About />
         <Services />
-        <Media />
         <GlowCursor
           className="glow-cursor--section"
           color="#d4ae72"
@@ -48,6 +47,7 @@ export default function App() {
         >
           <Markets />
         </GlowCursor>
+        <Media />
         <Contact />
       </main>
     </>
