@@ -1,0 +1,15 @@
+node_modules/
+dist/
+docs/
+reference/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# Unused original poster/website concepts are preserved locally, not site assets.
+public/images/*.jpg
