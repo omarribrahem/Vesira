@@ -11,10 +11,6 @@ export function Services() {
     <section className="services section" id="services">
       <div className="wrap">
         <Reveal className="section-head">
-          <div className="eyebrow">
-            <span aria-hidden="true" />
-            <p>{t.services.eyebrow}</p>
-          </div>
           <h2 className="section-title">{t.services.title}</h2>
         </Reveal>
         <div className="service-grid">
@@ -28,9 +24,6 @@ export function Services() {
                   />
                 </div>
                 <div className="service-body">
-                  <span className="service-num" aria-hidden="true">
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
                   <h3>{service.title}</h3>
                   <p>{service.text}</p>
                 </div>

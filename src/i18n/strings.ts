@@ -75,9 +75,9 @@ const en: Strings = {
   },
   hero: {
     eyebrow: 'Marketing & growth partner',
-    line1: 'Strategy.',
-    line2: 'Growth.',
-    line3: 'Impact.',
+    line1: 'Growth begins',
+    line2: 'with vision.',
+    line3: '',
     description:
       'Strategy, creative, social and performance marketing for brands in Egypt and Saudi Arabia.',
     cta1: 'Start a project',
@@ -187,9 +187,9 @@ const ar: Strings = {
   },
   hero: {
     eyebrow: 'شريك التسويق والنمو',
-    line1: 'استراتيجية.',
-    line2: 'نمو.',
-    line3: 'تأثير.',
+    line1: 'النمو يبدأ',
+    line2: 'بالرؤية.',
+    line3: '',
     description:
       'تسويق متكامل في الاستراتيجية والمحتوى والإعلانات للعلامات التجارية في مصر والسعودية.',
     cta1: 'ابدأ مشروعك',

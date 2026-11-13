@@ -11,10 +11,6 @@ export function Media() {
     <section className="media section section--light" id="media">
       <div className="wrap media-layout">
         <Reveal className="media-copy">
-          <div className="eyebrow eyebrow--dark">
-            <span aria-hidden="true" />
-            <p>{t.media.eyebrow}</p>
-          </div>
           <h2 className="section-title">{t.media.title}</h2>
           <p className="section-text">{t.media.text}</p>
         </Reveal>

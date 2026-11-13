@@ -2,6 +2,7 @@ import { useEffect, useState, useRef, type MouseEvent } from 'react';
 import { useLang } from '../i18n/LangContext';
 import { BrandMark } from './BrandMark';
 import { OceanSound } from './OceanSound';
+import { smoothScrollTo } from '../utils/smoothScroll';
 
 const SECTIONS = ['about', 'services', 'media', 'markets', 'contact'] as const;
 
@@ -70,14 +71,31 @@ export function SiteHeader() {
   return (
     <>
       <header className={scrolled ? 'site-header is-scrolled' : 'site-header'}>
-        <a href="#home" className="brand" aria-label="VASIRA">
+        <a
+          href="#home"
+          className="brand"
+          aria-label="VASIRA"
+          onClick={(e) => {
+            e.preventDefault();
+            smoothScrollTo('home');
+          }}
+        >
           <BrandMark />
           <span className="brand-name">VASIRA</span>
         </a>
 
         <nav className="desktop-nav" aria-label={lang === 'ar' ? 'التنقل الرئيسي' : 'Main navigation'}>
           {SECTIONS.map((id) => (
-            <a key={id} href={`#${id}`}>{t.nav[id]}</a>
+            <a
+              key={id}
+              href={`#${id}`}
+              onClick={(e) => {
+                e.preventDefault();
+                smoothScrollTo(id);
+              }}
+            >
+              {t.nav[id]}
+            </a>
           ))}
         </nav>
 
@@ -112,13 +130,11 @@ export function SiteHeader() {
           onClick={(event: MouseEvent) => {
             const target = event.target as HTMLElement;
             const link = target.closest('a');
-            if (link) {
+            if (link && link.hash) {
+              event.preventDefault();
+              const hash = link.hash;
               closeMenu();
-              const section = document.getElementById(link.hash.slice(1));
-              if (section) {
-                section.tabIndex = -1;
-                section.focus({ preventScroll: true });
-              }
+              smoothScrollTo(hash);
             }
           }}
         >
@@ -136,7 +152,7 @@ export function SiteHeader() {
               <span className="control-label">{lang === 'en' ? 'العربية' : 'English'}</span>
             </button>
             <OceanSound />
-            <a href="#contact" className="btn btn--primary menu-project">{t.nav.cta}<span aria-hidden="true">↗</span></a>
+            <a href="#contact" className="btn btn--primary menu-project">{t.nav.cta}</a>
           </div>
         </nav>
       )}
